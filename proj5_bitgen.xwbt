@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Shiwei\Documents\XILINX\proj5\proj5.ncd
+OUTFILE=C:\Users\Shiwei\Documents\XILINX\proj5\proj5.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\Shiwei\Documents\XILINX\proj5
+LICENSE=WebPack
+USER_INFO=135256_15690819_173552794_661

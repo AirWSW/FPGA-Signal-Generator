@@ -1,0 +1,62 @@
+// connect master cLOCk
+NET clk LOC = B8; // MCLK 50MHz clk
+
+// connect keys
+NET aaa LOC = A7; // BTN3
+NET bbb LOC = M4; // BTN2
+NET ccc LOC = C11; // BTN1
+NET ddd LOC = G12; // BTN0
+
+// NET "ccc" CLOCK_DEDICATED_ROUTE = FALSE;
+// NET "ddd" CLOCK_DEDICATED_ROUTE = FALSE;
+
+// connect switchs
+// NET x[7] LOC = N3; // SW7
+// NET x[6] LOC = E2; // SW6
+// NET x[5] LOC = F3; // SW5
+// NET x[4] LOC = G3; // SW4
+NET x[3] LOC = B4; // SW3
+NET x[2] LOC = K3; // SW2
+NET x[1] LOC = L3; // SW1
+NET x[0] LOC = P11; // SW0
+
+// connect LEDs
+NET y[7] LOC  =  G1; // LD7
+NET y[6] LOC  =  P4; // LD6
+NET y[5] LOC  =  N4; // LD5
+NET y[4] LOC  =  N5; // LD4
+NET y[3] LOC  =  P6; // LD3
+NET y[2] LOC  =  P7; // LD2
+NET y[1] LOC  =  M11; // LD1
+NET y[0] LOC  =  M5; // LD0
+
+// connect 7-segment display
+NET seg[6] LOC = L14; // CA
+NET seg[5] LOC = H12; // CB
+NET seg[4] LOC = N14; // CC
+NET seg[3] LOC = N11; // CD
+NET seg[2] LOC = P12; // CE
+NET seg[1] LOC = L13; // CF
+NET seg[0] LOC = M12; // CG
+NET an[3] LOC = K14; // AN3
+NET an[2] LOC = M13; // AN2
+NET an[1] LOC = J12; // AN1
+NET an[0] LOC = F12; // AN0
+NET dp LOC = N13; // DP
+
+// connect VGA display
+// NET red[0] LOC = C14; // RED0
+// NET red[1] LOC = D13; // RED1
+// NET red[2] LOC = F13; // RED2
+// NET green[0] LOC = F14; // GRN0
+// NET green[1] LOC = G13; // GRN1
+// NET green[2] LOC = G14; // GRN2
+// NET blue[0] LOC = H13; // BLU0
+// NET blue[1] LOC = J13; // BLU1
+// NET hsync LOC = J14; // HSYNC
+// NET vsync LOC = K13; // VSYNC
+
+NET sync LOC = B2; //AD7303输入端帧同步信号
+NET sclk LOC = B5; //数据移位进AD7303的移位时钟信号
+NET din LOC = A3; //AD7303串行数据输入
+

@@ -1,0 +1,23 @@
+ISim log file
+Running: C:\Users\Shiwei\Documents\proj5\test_more_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Shiwei/Documents/proj5/test_more_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: File "C:/Users/Shiwei/Documents/proj5/main_con_new.v" Line 59.  For instance main/div/, width 43 of formal port yshang is not equal to width 29 of actual signal yshang.
+WARNING: File "C:/Users/Shiwei/Documents/proj5/test_more.v" Line 33.  For instance test_more/uut/, width 4 of formal port x is not equal to width 8 of actual variable x. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 111092390 ns : File "C:/Users/Shiwei/Documents/proj5/dac_con.v" Line 43
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 220966190 ns : File "C:/Users/Shiwei/Documents/proj5/clockdiv.v" Line 30

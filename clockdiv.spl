@@ -1,0 +1,9 @@
+[Inputs]
+clk
+[Outputs]
+segclk
+sltclk
+[BiDir]
+[ATTRIBUTES]
+VeriModel clockdiv
+

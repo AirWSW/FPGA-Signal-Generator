@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/main_con_new.v -lang verilog -prj proj5 -o main_con_new.spl -module main_con_new -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e main_con_new.spl C:/Users/Shiwei/Documents/XILINX/proj5/main_con_new.sym 

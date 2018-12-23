@@ -1,0 +1,16 @@
+[Inputs]
+segclk
+sltclk
+=contro[4:0]=
+=num3_disp[3:0]=
+=num2_disp[3:0]=
+=num1_disp[3:0]=
+=num0_disp[3:0]=
+[Outputs]
+dp_wire
+=seg_wire[6:0]=
+=an_wire[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel seg_disp
+

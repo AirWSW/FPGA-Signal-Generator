@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/seg_disp.v -lang verilog -prj proj5 -o seg_disp.spl -module seg_disp -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e seg_disp.spl C:/Users/Shiwei/Documents/XILINX/proj5/seg_disp.sym 

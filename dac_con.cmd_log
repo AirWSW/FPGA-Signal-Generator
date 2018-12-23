@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/dac_con.v -lang verilog -prj proj5 -o dac_con.spl -module dac_con -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e dac_con.spl C:/Users/Shiwei/Documents/XILINX/proj5/dac_con.sym 
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/dac_con.v -lang verilog -prj proj5 -o dac_con.spl -module dac_con -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e dac_con.spl C:/Users/Shiwei/Documents/XILINX/proj5/dac_con.sym 

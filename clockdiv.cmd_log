@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/clockdiv.v -lang verilog -prj proj5 -o clockdiv.spl -module clockdiv -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e clockdiv.spl C:/Users/Shiwei/Documents/XILINX/proj5/clockdiv.sym 

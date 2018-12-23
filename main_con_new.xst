@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Shiwei/Documents/XILINX/proj5/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Shiwei/Documents/XILINX/proj5/xst"
+elaborate
+-ifn main_con_new.prj
+-ifmt mixed

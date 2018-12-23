@@ -1,0 +1,1768 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: proj5.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "proj5.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "proj5"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : proj5
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "seg_disp.v" in library work
+Compiling verilog file "mem_sin_new.v" in library work
+Module <seg_disp> compiled
+Compiling verilog file "main_con_new.v" in library work
+Module <mem_sin_new> compiled
+Module <main_con_new> compiled
+Compiling verilog file "dac_con.v" in library work
+Module <div_rill> compiled
+Compiling verilog file "clockdiv.v" in library work
+Module <dac_con> compiled
+Compiling verilog file "proj5.v" in library work
+Module <clockdiv> compiled
+Module <proj5> compiled
+No errors in compilation
+Analysis of file <"proj5.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <proj5> in library <work>.
+
+Analyzing hierarchy for module <clockdiv> in library <work>.
+
+Analyzing hierarchy for module <seg_disp> in library <work>.
+
+Analyzing hierarchy for module <main_con_new> in library <work>.
+
+Analyzing hierarchy for module <dac_con> in library <work>.
+
+Analyzing hierarchy for module <mem_sin_new> in library <work>.
+
+Analyzing hierarchy for module <div_rill> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <proj5>.
+Module <proj5> is correct for synthesis.
+ 
+Analyzing module <clockdiv> in library <work>.
+Module <clockdiv> is correct for synthesis.
+ 
+Analyzing module <seg_disp> in library <work>.
+Module <seg_disp> is correct for synthesis.
+ 
+Analyzing module <main_con_new> in library <work>.
+Module <main_con_new> is correct for synthesis.
+ 
+Analyzing module <div_rill> in library <work>.
+Module <div_rill> is correct for synthesis.
+ 
+Analyzing module <dac_con> in library <work>.
+INFO:Xst:1432 - Contents of array <data_out> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <data_out> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <dac_con> is correct for synthesis.
+ 
+Analyzing module <mem_sin_new> in library <work>.
+Module <mem_sin_new> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clockdiv>.
+    Related source file is "clockdiv.v".
+    Found 24-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <clockdiv> synthesized.
+
+
+Synthesizing Unit <seg_disp>.
+    Related source file is "seg_disp.v".
+    Found 16x7-bit ROM for signal <seg$mux0000> created at line 67.
+    Found 4-bit register for signal <an>.
+    Found 4-bit register for signal <digit>.
+    Found 4-bit 4-to-1 multiplexer for signal <digit$mux0000> created at line 61.
+    Found 1-bit register for signal <dp>.
+    Found 7-bit register for signal <seg>.
+    Found 2-bit up counter for signal <select>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <seg_disp> synthesized.
+
+
+Synthesizing Unit <dac_con>.
+    Related source file is "dac_con.v".
+INFO:Xst:1799 - State 10 is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | sclk                      (falling_edge)       |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 16-to-1 multiplexer for signal <din>.
+    Found 1-bit register for signal <sync>.
+    Found 1-bit register for signal <sclk>.
+    Found 5-bit register for signal <j>.
+    Found 5-bit adder for signal <j$addsub0000> created at line 45.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <dac_con> synthesized.
+
+
+Synthesizing Unit <mem_sin_new>.
+    Related source file is "mem_sin_new.v".
+    Found 256x8-bit ROM for signal <pout$mux0001> created at line 47.
+    Found 8-bit up counter for signal <addr>.
+    Found 8-bit register for signal <pout>.
+    Found 8-bit 4-to-1 multiplexer for signal <pout$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <mem_sin_new> synthesized.
+
+
+Synthesizing Unit <div_rill>.
+    Related source file is "main_con_new.v".
+    Found 43-bit subtractor for signal <old_temp_a_11$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_11$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_11$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_13$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_13$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_13$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_15$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_15$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_15$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_17$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_17$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_17$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_19$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_19$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_19$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_21$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_21$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_21$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_23$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_23$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_23$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_25$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_25$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_25$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_27$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_27$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_27$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_29$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_29$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_29$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_31$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_31$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_31$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_33$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_33$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_33$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_35$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_35$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_35$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_37$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_37$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_37$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_39$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_39$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_39$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_41$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_41$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_41$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_43$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_43$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_43$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_45$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_45$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_45$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_47$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_47$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_47$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_49$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_49$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_49$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_51$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_51$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_51$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_53$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_53$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_53$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_55$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_55$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_55$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_57$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_57$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_57$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_59$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_59$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_59$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_61$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_61$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_61$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_7$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_7$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_7$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <old_temp_a_9$addsub0000> created at line 198.
+    Found 43-bit adder for signal <old_temp_a_9$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <old_temp_a_9$cmp_ge0000> created at line 197.
+    Found 43-bit subtractor for signal <temp_a$addsub0000> created at line 198.
+    Found 43-bit adder for signal <temp_a$addsub0001> created at line 198.
+    Found 14-bit comparator greatequal for signal <temp_a$cmp_ge0000> created at line 197.
+    Summary:
+	inferred  58 Adder/Subtractor(s).
+	inferred  29 Comparator(s).
+Unit <div_rill> synthesized.
+
+
+Synthesizing Unit <main_con_new>.
+    Related source file is "main_con_new.v".
+    Found 21-bit up counter for signal <aaa_delay_count>.
+    Found 8-bit register for signal <addr>.
+    Found 8-bit adder for signal <addr$addsub0000> created at line 129.
+    Found 29-bit comparator lessequal for signal <addr$cmp_le0000> created at line 135.
+    Found 8-bit register for signal <alex>.
+    Found 21-bit up counter for signal <bbb_delay_count>.
+    Found 21-bit up counter for signal <ccc_delay_count>.
+    Found 21-bit up counter for signal <ddd_delay_count>.
+    Found 14-bit register for signal <frequency>.
+    Found 14-bit adder for signal <frequency$add0000> created at line 115.
+    Found 8-bit adder carry out for signal <frequency$addsub0002> created at line 115.
+    Found 11-bit adder carry out for signal <frequency$addsub0003> created at line 115.
+    Found 4x4-bit multiplier for signal <frequency$mult0000> created at line 115.
+    Found 4x7-bit multiplier for signal <frequency$mult0001> created at line 115.
+    Found 4x10-bit multiplier for signal <frequency$mult0002> created at line 115.
+    Found 1-bit register for signal <is_bling>.
+    Found 1-bit register for signal <memclk_reg>.
+    Found 30-bit comparator equal for signal <memclk_reg$cmp_eq0000> created at line 127.
+    Found 4-bit register for signal <num0_reg>.
+    Found 4-bit addsub for signal <num0_reg$share0000> created at line 104.
+    Found 4-bit register for signal <num1_reg>.
+    Found 4-bit addsub for signal <num1_reg$share0000> created at line 104.
+    Found 4-bit register for signal <num2_reg>.
+    Found 4-bit addsub for signal <num2_reg$share0000> created at line 104.
+    Found 4-bit register for signal <num3_reg>.
+    Found 4-bit addsub for signal <num3_reg$share0000> created at line 104.
+    Found 2-bit up counter for signal <place>.
+    Found 30-bit register for signal <temp>.
+    Found 30-bit adder for signal <temp$add0000> created at line 123.
+    Found 8-bit adder carry out for signal <temp$addsub0000> created at line 123.
+    Found 9x8-bit multiplier for signal <temp$mult0000> created at line 123.
+    Found 21x9-bit multiplier for signal <temp$mult0001> created at line 123.
+    Found 29-bit up counter for signal <yshang_temp>.
+    Found 29-bit comparator greater for signal <yshang_temp$cmp_gt0000> created at line 135.
+    Found 30-bit comparator not equal for signal <yshang_temp$cmp_ne0000> created at line 127.
+    Summary:
+	inferred   6 Counter(s).
+	inferred  78 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred   5 Multiplier(s).
+	inferred   4 Comparator(s).
+Unit <main_con_new> synthesized.
+
+
+Synthesizing Unit <proj5>.
+    Related source file is "proj5.v".
+Unit <proj5> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 256x8-bit ROM                                         : 1
+# Multipliers                                          : 5
+ 21x9-bit multiplier                                   : 1
+ 4x10-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 1
+ 4x7-bit multiplier                                    : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 70
+ 11-bit adder carry out                                : 1
+ 14-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 4-bit addsub                                          : 4
+ 43-bit adder                                          : 29
+ 43-bit subtractor                                     : 29
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 8-bit adder carry out                                 : 2
+# Counters                                             : 9
+ 2-bit up counter                                      : 2
+ 21-bit up counter                                     : 4
+ 24-bit up counter                                     : 1
+ 29-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 28
+ 1-bit register                                        : 17
+ 14-bit register                                       : 1
+ 30-bit register                                       : 1
+ 4-bit register                                        : 5
+ 5-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 33
+ 14-bit comparator greatequal                          : 29
+ 29-bit comparator greater                             : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator equal                               : 1
+ 30-bit comparator not equal                           : 1
+# Multiplexers                                         : 3
+ 1-bit 16-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <dac/state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | unreached
+ 11    | 11
+-------------------
+
+Synthesizing (advanced) Unit <main_con_new>.
+	Found pipelined multiplier on signal <frequency_mult0000>:
+		- 1 pipeline level(s) found in a register on signal <num1_reg>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <frequency_mult0001>:
+		- 1 pipeline level(s) found in a register on signal <num2_reg>.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <frequency_mult0002>:
+		- 1 pipeline level(s) found in a register on signal <num3_reg>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_frequency_mult0000 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_frequency_mult0001 by adding 1 register level(s).
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_frequency_mult0002 by adding 1 register level(s).
+Unit <main_con_new> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seg_disp>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_seg_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <seg_disp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 256x8-bit ROM                                         : 1
+# Multipliers                                          : 5
+ 21x9-bit multiplier                                   : 1
+ 4x10-bit registered multiplier                        : 1
+ 4x4-bit registered multiplier                         : 1
+ 4x7-bit registered multiplier                         : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 70
+ 11-bit adder carry out                                : 1
+ 14-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit addsub                                          : 4
+ 42-bit adder                                          : 28
+ 42-bit subtractor                                     : 28
+ 43-bit adder                                          : 1
+ 43-bit subtractor                                     : 1
+ 5-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 8-bit adder carry out                                 : 2
+# Counters                                             : 9
+ 2-bit up counter                                      : 2
+ 21-bit up counter                                     : 4
+ 24-bit up counter                                     : 1
+ 29-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 109
+ Flip-Flops                                            : 109
+# Comparators                                          : 33
+ 14-bit comparator greatequal                          : 29
+ 29-bit comparator greater                             : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator equal                               : 1
+ 30-bit comparator not equal                           : 1
+# Multiplexers                                         : 3
+ 1-bit 16-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <num1_reg_3> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0000_0> 
+INFO:Xst:2261 - The FF/Latch <num1_reg_2> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0000_1> 
+INFO:Xst:2261 - The FF/Latch <num1_reg_1> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0000_2> 
+INFO:Xst:2261 - The FF/Latch <num1_reg_0> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0000_3> 
+INFO:Xst:2261 - The FF/Latch <num2_reg_3> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0001_0> 
+INFO:Xst:2261 - The FF/Latch <num2_reg_2> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0001_1> 
+INFO:Xst:2261 - The FF/Latch <num2_reg_1> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0001_2> 
+INFO:Xst:2261 - The FF/Latch <num2_reg_0> in Unit <main_con_new> is equivalent to the following FF/Latch, which will be removed : <Mmult_frequency_mult0001_3> 
+
+Optimizing unit <proj5> ...
+
+Optimizing unit <seg_disp> ...
+
+Optimizing unit <dac_con> ...
+
+Optimizing unit <mem_sin_new> ...
+
+Optimizing unit <div_rill> ...
+
+Optimizing unit <main_con_new> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block proj5, actual ratio is 96.
+FlipFlop main/frequency_0 has been replicated 1 time(s)
+FlipFlop main/frequency_1 has been replicated 1 time(s)
+FlipFlop main/frequency_10 has been replicated 1 time(s)
+FlipFlop main/frequency_11 has been replicated 1 time(s)
+FlipFlop main/frequency_12 has been replicated 1 time(s)
+FlipFlop main/frequency_13 has been replicated 1 time(s)
+FlipFlop main/frequency_2 has been replicated 1 time(s)
+FlipFlop main/frequency_3 has been replicated 1 time(s)
+FlipFlop main/frequency_4 has been replicated 1 time(s)
+FlipFlop main/frequency_5 has been replicated 1 time(s)
+FlipFlop main/frequency_6 has been replicated 1 time(s)
+FlipFlop main/frequency_7 has been replicated 1 time(s)
+FlipFlop main/frequency_8 has been replicated 1 time(s)
+FlipFlop main/frequency_9 has been replicated 1 time(s)
+FlipFlop sin/pout_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop sin/pout_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 282
+ Flip-Flops                                            : 282
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : proj5.ngr
+Top Level Output File Name         : proj5
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 3423
+#      GND                         : 1
+#      INV                         : 44
+#      LUT1                        : 159
+#      LUT2                        : 163
+#      LUT3                        : 460
+#      LUT4                        : 893
+#      LUT4_D                      : 1
+#      MULT_AND                    : 22
+#      MUXCY                       : 1007
+#      MUXF5                       : 60
+#      MUXF6                       : 19
+#      MUXF7                       : 8
+#      MUXF8                       : 3
+#      VCC                         : 1
+#      XORCY                       : 582
+# FlipFlops/Latches                : 282
+#      FD                          : 95
+#      FD_1                        : 7
+#      FDE                         : 42
+#      FDR                         : 118
+#      FDR_1                       : 1
+#      FDRE                        : 4
+#      FDS                         : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 8
+#      OBUF                        : 23
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      889  out of    960    92%  
+ Number of Slice Flip Flops:            274  out of   1920    14%  
+ Number of 4 input LUTs:               1720  out of   1920    89%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of     83    38%  
+    IOB Flip Flops:                       8
+ Number of MULT18X18SIOs:                 4  out of      4   100%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk                                | BUFGP                        | 249   |
+CoF_Divider/q_14                   | NONE(SSD_Controller/select_1)| 18    |
+dac/sclk                           | NONE(dac/state_FSM_FFd2)     | 8     |
+main/memclk_reg                    | NONE(sin/addr_7)             | 8     |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 140.459ns (Maximum Frequency: 7.120MHz)
+   Minimum input arrival time before clock: 143.680ns
+   Maximum output required time after clock: 8.561ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 140.459ns (frequency: 7.120MHz)
+  Total number of paths / destination ports: 276880094509162770000000000000000000000000000000 / 319
+-------------------------------------------------------------------------
+Delay:               140.459ns (Levels of Logic = 426)
+  Source:            main/frequency_4_1 (FF)
+  Destination:       main/temp_29 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: main/frequency_4_1 to main/temp_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.591   0.762  main/frequency_4_1 (main/frequency_4_1)
+     LUT4:I0->O            1   0.704   0.000  main/div/Mcompar_old_temp_a_7_cmp_ge0000_lut<1> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<1>)
+     MUXCY:CI->O          12   0.459   0.996  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<2>)
+     LUT3:I2->O           39   0.704   1.299  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<4>1 (main/yshang<28>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_7<29>1 (main/div/_old_temp_a_7<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<13> (main/yshang<27>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_9<29>1 (main/div/_old_temp_a_9<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<13> (main/yshang<26>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_11<29>1 (main/div/_old_temp_a_11<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<13> (main/yshang<25>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_13<29>1 (main/div/_old_temp_a_13<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<13> (main/yshang<24>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_15<29>1 (main/div/_old_temp_a_15<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<13> (main/yshang<23>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_17<29>1 (main/div/_old_temp_a_17<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<13> (main/yshang<22>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_19<29>1 (main/div/_old_temp_a_19<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<13> (main/yshang<21>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_21<29>1 (main/div/_old_temp_a_21<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<13> (main/yshang<20>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_23<29>1 (main/div/_old_temp_a_23<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<13> (main/yshang<19>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_25<29>1 (main/div/_old_temp_a_25<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<13> (main/yshang<18>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_27<29>1 (main/div/_old_temp_a_27<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<13> (main/yshang<17>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_29<29>1 (main/div/_old_temp_a_29<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<13> (main/yshang<16>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_31<29>1 (main/div/_old_temp_a_31<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<13> (main/yshang<15>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_33<29>1 (main/div/_old_temp_a_33<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<13> (main/yshang<14>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_35<29>1 (main/div/_old_temp_a_35<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<13> (main/yshang<13>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_37<29>1 (main/div/_old_temp_a_37<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<13> (main/yshang<12>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_39<29>1 (main/div/_old_temp_a_39<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<13> (main/yshang<11>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_41<29>1 (main/div/_old_temp_a_41<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<13> (main/yshang<10>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_43<29>1 (main/div/_old_temp_a_43<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<13> (main/yshang<9>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_45<29>1 (main/div/_old_temp_a_45<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<13> (main/yshang<8>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_47<29>1 (main/div/_old_temp_a_47<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<13> (main/yshang<7>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_49<29>1 (main/div/_old_temp_a_49<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<13> (main/yshang<6>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_51<29>1 (main/div/_old_temp_a_51<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<13> (main/yshang<5>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_53<29>1 (main/div/_old_temp_a_53<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<13> (main/yshang<4>)
+     LUT2:I1->O            3   0.704   0.531  main/div/_old_temp_a_55<29>1 (main/div/_old_temp_a_55<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<13> (main/yshang<3>)
+     LUT2:I1->O            3   0.704   0.531  main/div/_old_temp_a_57<29>1 (main/div/_old_temp_a_57<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<13> (main/yshang<2>)
+     LUT2:I1->O            2   0.704   0.447  main/div/_old_temp_a_59<29>1 (main/div/_old_temp_a_59<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          28   0.459   1.340  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<13> (main/yshang<1>)
+     LUT2:I1->O            0   0.704   0.000  main/div/_old_temp_a_61<29>1 (main/div/_old_temp_a_61<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<1> (main/div/Mcompar_temp_a_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<2> (main/div/Mcompar_temp_a_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<3> (main/div/Mcompar_temp_a_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<4> (main/div/Mcompar_temp_a_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<5> (main/div/Mcompar_temp_a_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<6> (main/div/Mcompar_temp_a_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<7> (main/div/Mcompar_temp_a_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<8> (main/div/Mcompar_temp_a_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<9> (main/div/Mcompar_temp_a_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<10> (main/div/Mcompar_temp_a_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<11> (main/div/Mcompar_temp_a_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<12> (main/div/Mcompar_temp_a_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           2   0.459   0.447  main/div/Mcompar_temp_a_cmp_ge0000_cy<13> (main/yshang<0>)
+     MULT18X18SIO:B0->P10    1   4.602   0.499  main/Mmult_temp_mult0000 (main/temp_mult0000<10>)
+     LUT2:I1->O            1   0.704   0.000  main/Madd_temp_add0000_lut<2> (main/Madd_temp_add0000_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  main/Madd_temp_add0000_cy<2> (main/Madd_temp_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<3> (main/Madd_temp_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<4> (main/Madd_temp_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<5> (main/Madd_temp_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<6> (main/Madd_temp_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<7> (main/Madd_temp_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<8> (main/Madd_temp_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<9> (main/Madd_temp_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<10> (main/Madd_temp_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<11> (main/Madd_temp_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<12> (main/Madd_temp_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<13> (main/Madd_temp_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<14> (main/Madd_temp_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<15> (main/Madd_temp_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<16> (main/Madd_temp_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<17> (main/Madd_temp_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<18> (main/Madd_temp_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<19> (main/Madd_temp_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<20> (main/Madd_temp_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<21> (main/Madd_temp_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<22> (main/Madd_temp_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<23> (main/Madd_temp_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<24> (main/Madd_temp_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<25> (main/Madd_temp_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<26> (main/Madd_temp_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<27> (main/Madd_temp_add0000_cy<27>)
+     MUXCY:CI->O           0   0.059   0.000  main/Madd_temp_add0000_cy<28> (main/Madd_temp_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.000  main/Madd_temp_add0000_xor<29> (main/temp_add0000<29>)
+     FDE:D                     0.308          main/temp_29
+    ----------------------------------------
+    Total                    140.459ns (86.938ns logic, 53.521ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CoF_Divider/q_14'
+  Clock period: 3.722ns (frequency: 268.673MHz)
+  Total number of paths / destination ports: 53 / 21
+-------------------------------------------------------------------------
+Delay:               3.722ns (Levels of Logic = 1)
+  Source:            SSD_Controller/select_0 (FF)
+  Destination:       SSD_Controller/dp (FF)
+  Source Clock:      CoF_Divider/q_14 rising
+  Destination Clock: CoF_Divider/q_14 rising
+
+  Data Path: SSD_Controller/select_0 to SSD_Controller/dp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.591   1.096  SSD_Controller/select_0 (SSD_Controller/select_0)
+     LUT4:I1->O            1   0.704   0.420  SSD_Controller/dp_or00001 (SSD_Controller/dp_or0000)
+     FDR:R                     0.911          SSD_Controller/dp
+    ----------------------------------------
+    Total                      3.722ns (2.206ns logic, 1.516ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dac/sclk'
+  Clock period: 3.815ns (frequency: 262.123MHz)
+  Total number of paths / destination ports: 35 / 9
+-------------------------------------------------------------------------
+Delay:               3.815ns (Levels of Logic = 2)
+  Source:            dac/j_0 (FF)
+  Destination:       dac/state_FSM_FFd1 (FF)
+  Source Clock:      dac/sclk falling
+  Destination Clock: dac/sclk falling
+
+  Data Path: dac/j_0 to dac/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            10   0.591   1.057  dac/j_0 (dac/j_0)
+     LUT3:I0->O            2   0.704   0.451  dac/state_FSM_FFd1-In11 (dac/N8)
+     LUT4:I3->O            1   0.704   0.000  dac/state_FSM_FFd1-In1 (dac/state_FSM_FFd1-In1)
+     FDR_1:D                   0.308          dac/state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.815ns (2.307ns logic, 1.508ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'main/memclk_reg'
+  Clock period: 4.618ns (frequency: 216.556MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               4.618ns (Levels of Logic = 8)
+  Source:            sin/addr_1 (FF)
+  Destination:       sin/addr_7 (FF)
+  Source Clock:      main/memclk_reg rising
+  Destination Clock: main/memclk_reg rising
+
+  Data Path: sin/addr_1 to sin/addr_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              78   0.591   1.452  sin/addr_1 (sin/addr_1)
+     LUT1:I0->O            1   0.704   0.000  sin/Mcount_addr_cy<1>_rt (sin/Mcount_addr_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  sin/Mcount_addr_cy<1> (sin/Mcount_addr_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  sin/Mcount_addr_cy<2> (sin/Mcount_addr_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  sin/Mcount_addr_cy<3> (sin/Mcount_addr_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  sin/Mcount_addr_cy<4> (sin/Mcount_addr_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  sin/Mcount_addr_cy<5> (sin/Mcount_addr_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  sin/Mcount_addr_cy<6> (sin/Mcount_addr_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  sin/Mcount_addr_xor<7> (sin/Result<7>)
+     FD:D                      0.308          sin/addr_7
+    ----------------------------------------
+    Total                      4.618ns (3.166ns logic, 1.452ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CoF_Divider/q_14'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.428ns (Levels of Logic = 2)
+  Source:            x<2> (PAD)
+  Destination:       SSD_Controller/dp (FF)
+  Destination Clock: CoF_Divider/q_14 rising
+
+  Data Path: x<2> to SSD_Controller/dp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  x_2_IBUF (x_2_IBUF)
+     LUT4:I0->O            1   0.704   0.420  SSD_Controller/dp_or00001 (SSD_Controller/dp_or0000)
+     FDR:R                     0.911          SSD_Controller/dp
+    ----------------------------------------
+    Total                      4.428ns (2.833ns logic, 1.595ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 109333551285396300000000000000000000000000000000 / 172
+-------------------------------------------------------------------------
+Offset:              143.680ns (Levels of Logic = 429)
+  Source:            x<3> (PAD)
+  Destination:       main/temp_29 (FF)
+  Destination Clock: clk rising
+
+  Data Path: x<3> to main/temp_29
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.218   1.158  x_3_IBUF (x_3_IBUF)
+     LUT2:I0->O           25   0.704   1.435  main/default_frq<10>1 (main/default_frq<10>)
+     LUT2:I0->O            1   0.704   0.000  main/div/Mcompar_old_temp_a_7_cmp_ge0000_lut<0> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<0> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<1>)
+     MUXCY:CI->O          12   0.459   0.996  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<2>)
+     LUT3:I2->O           39   0.704   1.299  main/div/Mcompar_old_temp_a_7_cmp_ge0000_cy<4>1 (main/yshang<28>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_7<29>1 (main/div/_old_temp_a_7<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_9_cmp_ge0000_cy<13> (main/yshang<27>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_9<29>1 (main/div/_old_temp_a_9<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_11_cmp_ge0000_cy<13> (main/yshang<26>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_11<29>1 (main/div/_old_temp_a_11<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_13_cmp_ge0000_cy<13> (main/yshang<25>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_13<29>1 (main/div/_old_temp_a_13<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_15_cmp_ge0000_cy<13> (main/yshang<24>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_15<29>1 (main/div/_old_temp_a_15<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_17_cmp_ge0000_cy<13> (main/yshang<23>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_17<29>1 (main/div/_old_temp_a_17<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_19_cmp_ge0000_cy<13> (main/yshang<22>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_19<29>1 (main/div/_old_temp_a_19<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_21_cmp_ge0000_cy<13> (main/yshang<21>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_21<29>1 (main/div/_old_temp_a_21<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_23_cmp_ge0000_cy<13> (main/yshang<20>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_23<29>1 (main/div/_old_temp_a_23<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_25_cmp_ge0000_cy<13> (main/yshang<19>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_25<29>1 (main/div/_old_temp_a_25<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_27_cmp_ge0000_cy<13> (main/yshang<18>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_27<29>1 (main/div/_old_temp_a_27<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_29_cmp_ge0000_cy<13> (main/yshang<17>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_29<29>1 (main/div/_old_temp_a_29<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_31_cmp_ge0000_cy<13> (main/yshang<16>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_31<29>1 (main/div/_old_temp_a_31<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_33_cmp_ge0000_cy<13> (main/yshang<15>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_33<29>1 (main/div/_old_temp_a_33<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_35_cmp_ge0000_cy<13> (main/yshang<14>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_35<29>1 (main/div/_old_temp_a_35<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_37_cmp_ge0000_cy<13> (main/yshang<13>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_37<29>1 (main/div/_old_temp_a_37<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_39_cmp_ge0000_cy<13> (main/yshang<12>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_39<29>1 (main/div/_old_temp_a_39<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_41_cmp_ge0000_cy<13> (main/yshang<11>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_41<29>1 (main/div/_old_temp_a_41<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_43_cmp_ge0000_cy<13> (main/yshang<10>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_43<29>1 (main/div/_old_temp_a_43<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_45_cmp_ge0000_cy<13> (main/yshang<9>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_45<29>1 (main/div/_old_temp_a_45<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_47_cmp_ge0000_cy<13> (main/yshang<8>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_47<29>1 (main/div/_old_temp_a_47<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_49_cmp_ge0000_cy<13> (main/yshang<7>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_49<29>1 (main/div/_old_temp_a_49<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_51_cmp_ge0000_cy<13> (main/yshang<6>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_51<29>1 (main/div/_old_temp_a_51<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.300  main/div/Mcompar_old_temp_a_53_cmp_ge0000_cy<13> (main/yshang<5>)
+     LUT3:I2->O            3   0.704   0.531  main/div/_old_temp_a_53<29>1 (main/div/_old_temp_a_53<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_55_cmp_ge0000_cy<13> (main/yshang<4>)
+     LUT2:I1->O            3   0.704   0.531  main/div/_old_temp_a_55<29>1 (main/div/_old_temp_a_55<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_57_cmp_ge0000_cy<13> (main/yshang<3>)
+     LUT2:I1->O            3   0.704   0.531  main/div/_old_temp_a_57<29>1 (main/div/_old_temp_a_57<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          40   0.459   1.344  main/div/Mcompar_old_temp_a_59_cmp_ge0000_cy<13> (main/yshang<2>)
+     LUT2:I1->O            2   0.704   0.447  main/div/_old_temp_a_59<29>1 (main/div/_old_temp_a_59<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<1> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<2> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<3> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<4> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<5> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<6> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<7> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<8> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<9> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<10> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<11> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<12> (main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          28   0.459   1.340  main/div/Mcompar_old_temp_a_61_cmp_ge0000_cy<13> (main/yshang<1>)
+     LUT2:I1->O            0   0.704   0.000  main/div/_old_temp_a_61<29>1 (main/div/_old_temp_a_61<29>)
+     MUXCY:DI->O           1   0.888   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<1> (main/div/Mcompar_temp_a_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<2> (main/div/Mcompar_temp_a_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<3> (main/div/Mcompar_temp_a_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<4> (main/div/Mcompar_temp_a_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<5> (main/div/Mcompar_temp_a_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<6> (main/div/Mcompar_temp_a_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<7> (main/div/Mcompar_temp_a_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<8> (main/div/Mcompar_temp_a_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<9> (main/div/Mcompar_temp_a_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<10> (main/div/Mcompar_temp_a_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<11> (main/div/Mcompar_temp_a_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/div/Mcompar_temp_a_cmp_ge0000_cy<12> (main/div/Mcompar_temp_a_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           2   0.459   0.447  main/div/Mcompar_temp_a_cmp_ge0000_cy<13> (main/yshang<0>)
+     MULT18X18SIO:B0->P10    1   4.602   0.499  main/Mmult_temp_mult0000 (main/temp_mult0000<10>)
+     LUT2:I1->O            1   0.704   0.000  main/Madd_temp_add0000_lut<2> (main/Madd_temp_add0000_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  main/Madd_temp_add0000_cy<2> (main/Madd_temp_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<3> (main/Madd_temp_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<4> (main/Madd_temp_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<5> (main/Madd_temp_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<6> (main/Madd_temp_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<7> (main/Madd_temp_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<8> (main/Madd_temp_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<9> (main/Madd_temp_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<10> (main/Madd_temp_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<11> (main/Madd_temp_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<12> (main/Madd_temp_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<13> (main/Madd_temp_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<14> (main/Madd_temp_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<15> (main/Madd_temp_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<16> (main/Madd_temp_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<17> (main/Madd_temp_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<18> (main/Madd_temp_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<19> (main/Madd_temp_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<20> (main/Madd_temp_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<21> (main/Madd_temp_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<22> (main/Madd_temp_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<23> (main/Madd_temp_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<24> (main/Madd_temp_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<25> (main/Madd_temp_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<26> (main/Madd_temp_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  main/Madd_temp_add0000_cy<27> (main/Madd_temp_add0000_cy<27>)
+     MUXCY:CI->O           0   0.059   0.000  main/Madd_temp_add0000_cy<28> (main/Madd_temp_add0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.000  main/Madd_temp_add0000_xor<29> (main/temp_add0000<29>)
+     FDE:D                     0.308          main/temp_29
+    ----------------------------------------
+    Total                    143.680ns (88.328ns logic, 55.352ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dac/sclk'
+  Total number of paths / destination ports: 16 / 2
+-------------------------------------------------------------------------
+Offset:              8.561ns (Levels of Logic = 5)
+  Source:            dac/j_1 (FF)
+  Destination:       din (PAD)
+  Source Clock:      dac/sclk falling
+
+  Data Path: dac/j_1 to din
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             7   0.591   0.708  dac/j_1 (dac/j_1)
+     INV:I->O              2   0.704   0.447  dac/COND_63_not0000<1>1_INV_0 (dac/COND_63_not0000<1>)
+     MUXF5:S->O            1   0.739   0.000  dac/Mmux_din_6_f5 (dac/Mmux_din_6_f5)
+     MUXF6:I1->O           1   0.521   0.420  dac/Mmux_din_5_f6 (dac/Mmux_din_5_f6)
+     MUXF5:S->O            1   0.739   0.420  dac/COND_63_not0000<3>1_f5 (din_OBUF)
+     OBUF:I->O                 3.272          din_OBUF (din)
+    ----------------------------------------
+    Total                      8.561ns (6.566ns logic, 1.995ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 10
+-------------------------------------------------------------------------
+Offset:              7.487ns (Levels of Logic = 5)
+  Source:            sin/pout_1 (FF)
+  Destination:       din (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sin/pout_1 to din
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.499  sin/pout_1 (sin/pout_1)
+     LUT3:I1->O            1   0.704   0.000  dac/Mmux_din_9 (dac/Mmux_din_9)
+     MUXF5:I0->O           1   0.321   0.000  dac/Mmux_din_7_f5 (dac/Mmux_din_7_f5)
+     MUXF6:I0->O           1   0.521   0.420  dac/Mmux_din_5_f6 (dac/Mmux_din_5_f6)
+     MUXF5:S->O            1   0.739   0.420  dac/COND_63_not0000<3>1_f5 (din_OBUF)
+     OBUF:I->O                 3.272          din_OBUF (din)
+    ----------------------------------------
+    Total                      7.487ns (6.148ns logic, 1.339ns route)
+                                       (82.1% logic, 17.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CoF_Divider/q_14'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            SSD_Controller/dp (FF)
+  Destination:       dp (PAD)
+  Source Clock:      CoF_Divider/q_14 rising
+
+  Data Path: SSD_Controller/dp to dp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  SSD_Controller/dp (SSD_Controller/dp)
+     OBUF:I->O                 3.272          dp_OBUF (dp)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.59 secs
+ 
+--> 
+
+Total memory usage is 4586612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

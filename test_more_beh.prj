@@ -1,0 +1,8 @@
+verilog work "seg_disp.v"
+verilog work "mem_sin_new.v"
+verilog work "main_con_new.v"
+verilog work "dac_con.v"
+verilog work "clockdiv.v"
+verilog work "proj5.v"
+verilog work "test_more.v"
+verilog work "E:/XILINX/14.7/ISE_DS/ISE//verilog/src/glbl.v"

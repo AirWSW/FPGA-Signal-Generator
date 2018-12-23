@@ -1,0 +1,11 @@
+[Inputs]
+clk
+=data_in[7:0]=
+[Outputs]
+din
+sync
+sclk
+[BiDir]
+[ATTRIBUTES]
+VeriModel dac_con
+

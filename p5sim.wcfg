@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Shiwei/Documents/XILINX/proj5/test_more_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_more" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/test_more/uut/main/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/aaa" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">aaa</obj_property>
+      <obj_property name="ObjectShortName">aaa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/bbb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bbb</obj_property>
+      <obj_property name="ObjectShortName">bbb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/ccc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccc</obj_property>
+      <obj_property name="ObjectShortName">ccc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/ddd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ddd</obj_property>
+      <obj_property name="ObjectShortName">ddd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x[1:0]</obj_property>
+      <obj_property name="ObjectShortName">x[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/contro" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">contro[2:0]</obj_property>
+      <obj_property name="ObjectShortName">contro[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num3_disp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num3_disp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num3_disp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num2_disp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num2_disp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num2_disp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num1_disp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num1_disp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num1_disp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num0_disp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num0_disp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num0_disp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/memclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memclk</obj_property>
+      <obj_property name="ObjectShortName">memclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/memmode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memmode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">memmode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/alex_wire" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alex_wire[7:0]</obj_property>
+      <obj_property name="ObjectShortName">alex_wire[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/place" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">place[1:0]</obj_property>
+      <obj_property name="ObjectShortName">place[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num3_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num3_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num3_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num2_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num2_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num2_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num1_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num1_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num1_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/num0_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num0_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num0_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/is_bling" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">is_bling</obj_property>
+      <obj_property name="ObjectShortName">is_bling</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/alex" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alex[7:0]</obj_property>
+      <obj_property name="ObjectShortName">alex[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/bbb_delay_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bbb_delay_count[20:0]</obj_property>
+      <obj_property name="ObjectShortName">bbb_delay_count[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/ccc_delay_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ccc_delay_count[20:0]</obj_property>
+      <obj_property name="ObjectShortName">ccc_delay_count[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/aaa_delay_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">aaa_delay_count[20:0]</obj_property>
+      <obj_property name="ObjectShortName">aaa_delay_count[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/ddd_delay_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ddd_delay_count[20:0]</obj_property>
+      <obj_property name="ObjectShortName">ddd_delay_count[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/frequency" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">frequency[13:0]</obj_property>
+      <obj_property name="ObjectShortName">frequency[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/yshang" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yshang[42:0]</obj_property>
+      <obj_property name="ObjectShortName">yshang[42:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/yshang_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yshang_temp[28:0]</obj_property>
+      <obj_property name="ObjectShortName">yshang_temp[28:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp[29:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[29:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_more/uut/main/memclk_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memclk_reg</obj_property>
+      <obj_property name="ObjectShortName">memclk_reg</obj_property>
+   </wvobject>
+</wave_config>

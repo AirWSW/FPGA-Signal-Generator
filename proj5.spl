@@ -1,0 +1,19 @@
+[Inputs]
+clk
+aaa
+bbb
+ccc
+ddd
+=x[3:0]=
+[Outputs]
+dp
+din
+sync
+sclk
+=seg[6:0]=
+=an[3:0]=
+=y[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel proj5
+

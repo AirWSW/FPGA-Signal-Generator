@@ -1,0 +1,34 @@
+Running: E:\XILINX\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Shiwei/Documents/proj5/test_more_isim_beh.exe -prj C:/Users/Shiwei/Documents/proj5/test_more_beh.prj work.test_more work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/seg_disp.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/mem_sin_new.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/main_con_new.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/dac_con.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/clockdiv.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/proj5.v" into library work
+Analyzing Verilog file "C:/Users/Shiwei/Documents/proj5/test_more.v" into library work
+Analyzing Verilog file "E:/XILINX/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Shiwei/Documents/proj5/test_more.v" Line 44: Port y is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Shiwei/Documents/proj5/test_more.v" Line 50: Size mismatch in connection of port <x>. Formal port size is 4-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Shiwei/Documents/proj5/main_con_new.v" Line 164: Size mismatch in connection of port <yshang>. Formal port size is 43-bit while actual signal size is 29-bit.
+Completed static elaboration
+Compiling module clockdiv
+Compiling module seg_disp
+Compiling module div_rill
+Compiling module main_con_new
+Compiling module dac_con
+Compiling module mem_sin_new
+Compiling module proj5
+Compiling module test_more
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_more_isim_beh.exe.sim\libPortability.dll".
+Compiled 9 Verilog Units
+Built simulation executable C:/Users/Shiwei/Documents/proj5/test_more_isim_beh.exe
+Fuse Memory Usage: 29136 KB
+Fuse CPU Usage: 436 ms

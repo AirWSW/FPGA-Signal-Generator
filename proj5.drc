@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 09 13:42:07 2018
+
+drc -z proj5.ncd proj5.pcf
+
+DRC detected 0 errors and 0 warnings.

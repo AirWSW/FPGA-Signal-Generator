@@ -1,0 +1,957 @@
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o proj5_map.ncd proj5.ngd proj5.pcf 
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim proj5.ngc proj5_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim proj5.ngc proj5_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim proj5.ngc proj5_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+par -w -intstyle ise -ol high -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+xst -intstyle ise -ifn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.xst" -ofn "C:/Users/Shiwei/Documents/XILINX/proj5/proj5.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc proj5.ucf -p xc3s100e-cp132-4 proj5.ngc proj5.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -ntd -o proj5_map.ncd proj5.ngd proj5.pcf 
+par -w -intstyle ise -ol std -t 1 -x proj5_map.ncd proj5.ncd proj5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml proj5.twx proj5.ncd -o proj5.twr proj5.pcf -ucf proj5.ucf 
+bitgen -intstyle ise -f proj5.ut proj5.ncd 
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/proj5.v -lang verilog -prj proj5 -o proj5.spl -module proj5 -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e proj5.spl C:/Users/Shiwei/Documents/XILINX/proj5/proj5.sym 
+sch2sym -intstyle ise -family spartan3e -refsym proj5 C:/Users/Shiwei/Documents/XILINX/proj5/proj5.sch C:/Users/Shiwei/Documents/XILINX/proj5/proj5.sym 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim proj5.ngc proj5_synthesis.v 

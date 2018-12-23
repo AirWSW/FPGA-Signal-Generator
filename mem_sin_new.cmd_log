@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Shiwei/Documents/XILINX/proj5/mem_sin_new.v -lang verilog -prj proj5 -o mem_sin_new.spl -module mem_sin_new -template E:/XILINX/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mem_sin_new.spl C:/Users/Shiwei/Documents/XILINX/proj5/mem_sin_new.sym 
